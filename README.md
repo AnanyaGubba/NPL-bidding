@@ -9,7 +9,7 @@ This repository contains:
 
 ---
 
-## Screenshots
+## Deployment
 
 ![Output](deployed/page1.jpeg)
 
@@ -220,12 +220,4 @@ pytest
 
 ---
 
-## License
 
-Add a license if you intend to open-source this project (MIT is common).
-
----
-
-## Acknowledgements
-
-Built to support an interactive auction process for sports league team management.
