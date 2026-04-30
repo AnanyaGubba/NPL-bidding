@@ -9,7 +9,7 @@ This repository contains:
 
 ---
 
-## Deployment
+## Screenshots
 
 ![Output](deployed/page1.jpeg)
 
@@ -35,27 +35,69 @@ This repository contains:
 ### Frontend
 - React + **TypeScript**
 - Create React App tooling
+- Tailwind CSS (config present)
 
 ### Backend
 - **Python** + Flask
 - Socket.IO (real-time bid broadcasting)
 
 ### Database
-- **SQLite** (`.db` file stored in the backend)
+- **SQLite** (`backend/instance/npl_bidding.db`)
 
 ---
 
-## Repository Structure (high level)
+## Full Repository Structure (detailed)
+
+> Below is the current directory/file structure in this repo (expanded to the last level present in GitHub).
 
 ```text
 NPL-bidding/
-  backend/               # Flask API + Socket.IO server
-  frontend/              # React (TypeScript) client
-  deployed/              # Screenshots/assets used in README
-  README.md
-```
+  .github/
+    copilot-instructions.md        # Copilot workspace instructions
+    implementation-plan.md         # Project plan/notes (currently same contents as copilot instructions)
 
-(Exact files may vary—see the folders for implementation details.)
+  backend/
+    Procfile                       # Process definition for deployment (e.g., Heroku/Render)
+    app.py                          # Flask app entrypoint (API + real-time events)
+    requirements.txt               # Python dependencies
+    runtime.txt                    # Python runtime version for deployment
+    instance/
+      npl_bidding.db               # SQLite database file (persisted app data)
+
+  deployed/
+    page1.jpeg                     # Screenshot used in README
+    bidding.jpeg                   # Screenshot used in README
+    selection.jpeg                 # Screenshot used in README
+
+  frontend/
+    .gitignore                     # Frontend gitignore (CRA)
+    README.md                      # CRA-generated docs (frontend-only)
+    package.json                   # Frontend dependencies + scripts
+    package-lock.json              # Locked dependency tree
+    postcss.config.js              # PostCSS configuration
+    tailwind.config.js             # Tailwind configuration
+    tsconfig.json                  # TypeScript configuration
+    public/
+      favicon.ico
+      index.html
+      logo192.png
+      logo512.png
+      manifest.json
+      robots.txt
+    src/
+      App.css
+      App.test.tsx
+      App.tsx
+      index.css
+      index.tsx
+      logo.svg
+      react-app-env.d.ts
+      reportWebVitals.ts
+      setupTests.ts
+
+  DEPLOYMENT.md                    # Additional deployment notes
+  README.md                        # You are here
+```
 
 ---
 
@@ -158,7 +200,8 @@ Depending on how the project is wired, you may need one of these adjustments:
 ## Database
 
 - Uses **SQLite** for local persistence.
-- The database file is typically stored within `backend/` (example: `npl_bidding.db`).
+- Current database file in this repo:
+  - `backend/instance/npl_bidding.db`
 
 If you reset the auction data frequently during development, you can:
 - delete the `.db` file (if safe for your workflow), then re-run the backend
@@ -220,4 +263,12 @@ pytest
 
 ---
 
+## License
 
+Add a license if you intend to open-source this project (MIT is common).
+
+---
+
+## Acknowledgements
+
+Built to support an interactive auction process for sports league team management.
