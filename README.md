@@ -8,6 +8,12 @@ A real-time bidding application for the Nepal Premier League (NPL) built with Re
 - RESTful API with Flask
 - Lightweight SQLite database
 
+ ![Output](deployed/page1.jpeg)
+
+ ![Output](deployed/bidding.jpeg)
+
+ ![Output](deployed/selection.jpeg)
+
 ## Prerequisites
 - Node.js (v16+)
 - Python (v3.9+)
