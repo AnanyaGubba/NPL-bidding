@@ -51,52 +51,54 @@ This repository contains:
 > Below is the current directory/file structure in this repo (expanded to the last level present in GitHub).
 
 ```text
-NPL-bidding/
-  .github/
-    copilot-instructions.md        # Copilot workspace instructions
-    implementation-plan.md         # Project plan/notes (currently same contents as copilot instructions)
-
-  backend/
-    Procfile                       # Process definition for deployment (e.g., Heroku/Render)
-    app.py                          # Flask app entrypoint (API + real-time events)
-    requirements.txt               # Python dependencies
-    runtime.txt                    # Python runtime version for deployment
-    instance/
-      npl_bidding.db               # SQLite database file (persisted app data)
-
-  deployed/
-    page1.jpeg                     # Screenshot used in README
-    bidding.jpeg                   # Screenshot used in README
-    selection.jpeg                 # Screenshot used in README
-
-  frontend/
-    .gitignore                     # Frontend gitignore (CRA)
-    README.md                      # CRA-generated docs (frontend-only)
-    package.json                   # Frontend dependencies + scripts
-    package-lock.json              # Locked dependency tree
-    postcss.config.js              # PostCSS configuration
-    tailwind.config.js             # Tailwind configuration
-    tsconfig.json                  # TypeScript configuration
-    public/
-      favicon.ico
-      index.html
-      logo192.png
-      logo512.png
-      manifest.json
-      robots.txt
-    src/
-      App.css
-      App.test.tsx
-      App.tsx
-      index.css
-      index.tsx
-      logo.svg
-      react-app-env.d.ts
-      reportWebVitals.ts
-      setupTests.ts
-
-  DEPLOYMENT.md                    # Additional deployment notes
-  README.md                        # You are here
+NPL-bidding
+├── .github
+│   ├── copilot-instructions.md
+│   └── implementation-plan.md
+│
+├── backend
+│   ├── instance
+│   │   └── npl_bidding.db
+│   ├── Procfile
+│   ├── app.py
+│   ├── requirements.txt
+│   └── runtime.txt
+│
+├── deployed
+│   ├── bidding.jpeg
+│   ├── page1.jpeg
+│   └── selection.jpeg
+│
+├── frontend
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   │
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.test.tsx
+│   │   ├── App.tsx
+│   │   ├── index.css
+│   │   ├── index.tsx
+│   │   ├── logo.svg
+│   │   ├── react-app-env.d.ts
+│   │   ├── reportWebVitals.ts
+│   │   └── setupTests.ts
+│   │
+│   ├── .gitignore
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+│
+├── DEPLOYMENT.md
+└── README.md
 ```
 
 ---
