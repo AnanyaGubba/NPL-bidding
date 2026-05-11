@@ -1,6 +1,6 @@
 # NPL Bidding Application (NPL Auction Platform)
 
-A web-based **Nepal Premier League (NPL)** player auction/bidding platform where an **auctioneer controls the auction**, team managers **bid in real-time**, and players are **dynamically assigned** to teams based on winning bids.
+A web-based **Nagpur Premier League (NPL)** player auction/bidding platform where an **auctioneer controls the auction**, team managers **bid in real-time**, and players are **dynamically assigned** to teams based on winning bids.
 
 This repository contains:
 - **Backend:** Python + Flask (+ Socket.IO for real-time events)
@@ -265,11 +265,7 @@ pytest
 
 ---
 
-## License
 
-Add a license if you intend to open-source this project (MIT is common).
-
----
 
 ## Acknowledgements
 
